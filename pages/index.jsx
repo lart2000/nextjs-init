@@ -16,9 +16,9 @@ export default class index extends Component {
 	
 	}
 	componentDidMount(){
-		
 	}
 	render() {
+		
 		return (
 			<React.Fragment>
 				<header className="l-header l-markup" ref={ref=>{this.header=ref}}>
@@ -72,9 +72,3 @@ function getLoading(){
 		
 	</div>
 }
-
-// import ReactDOM from "react-dom";
-// function PortalToHead({children}){
-// 	const header= document.querySelector(".l-header")
-// 	return ReactDOM.createPortal(children,header);
-// }
