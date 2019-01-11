@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
-import Index from '../src/components/profile-photo/index';
-import { Knight } from '../src/components/profile-photo';
-import { Square } from '../src/components/profile-photo';
+
+
+import Knight from '../src/components/profile-photo/knight';
 import './../src/components/profile-photo/index.sass';
-function fillBoard(){
-	return "";
-}
+import {  DragDropContextProvider } from "react-dnd";
+import HTML5Backend from "react-dnd-html5-backend";
+import  Square  from '../src/components/profile-photo/square';
 class  Board extends Component {
 	state = {
 		position: [1,1]
@@ -69,12 +69,10 @@ class  Board extends Component {
 		return array;
 	}
 }
-export default class Profile extends Component {
-	
-	render() {
-		return (
-			<Board position={[1,1]}>
-			</Board>
-		)
-  }
+export  default function Profile () {	
+	return (
+		<DragDropContextProvider backend={HTML5Backend}>
+			<Board position={[1,1]}/>
+		</DragDropContextProvider>
+	)
 }

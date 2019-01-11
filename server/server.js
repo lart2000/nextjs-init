@@ -16,8 +16,8 @@ app.prepare()
 					'Content-Type': 'text/plain;charset=UTF-8',
 				}
 			};
-			return res.status(200).sendfile("robots.txt",options);
-			
+			return res.status(200).sendfile("robots.txt", options);
+
 		})
 		server.get('/post', (req, res) => {
 			return app.render(req, res, '/posts', req.query)

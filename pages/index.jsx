@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
-import './../src/sass/pages/index/index.sass'
 import Svg_user from "./../static/man-user.svg";
 import NoSSR from '../src/components/no-ssr/index';
-import Button from '@material-ui/core/Button';
 export default class index extends Component {
 	static getInitialProps = async (ctx)=>{
 		console.log("entro");
@@ -12,21 +10,14 @@ export default class index extends Component {
 	}
 	constructor(props){
 		super(props);
-		// this.main = React.createRef();
-	
 	}
-	componentDidMount(){
-	}
-	render() {
-		
+	render() {	
 		return (
 			<React.Fragment>
 				<header className="l-header l-markup" ref={ref=>{this.header=ref}}>
-					welcome to nextjs		
+					welcome to nextjs
 					
 				</header> 
-				{/* <DynamicComponentWithNoSSR/> */}
-				{/* {this.props.name} */}
 				<main className="l-main" >
 					<Svg_user className="svg-user" />
 					<div >primer ref</div>
@@ -42,9 +33,6 @@ export default class index extends Component {
 				<NoSSR>
 					asdas
 				</NoSSR>
-				{/* <Button variant="contained" color="primary">
-					Primary
-				</Button> */}
 				<footer className="l-footer">
 					<button onClick={this.handleClick}> holi </button>
 				</footer>
@@ -53,10 +41,7 @@ export default class index extends Component {
 	}
 	handleClick=()=>{
 		console.log(this.main);
-		// document.querySelector("").textContent;
-		// this.main.current.textContent="holi, estas dentro";
 		this.second.innerHTML="holi , esta dentro dela segundo ref";
-		// console.log1(config());
 	}
 }
 

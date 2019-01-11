@@ -3,6 +3,7 @@ import Card from './../src/components/card'
 import List from '../src/components/list';
 import Grid from '@material-ui/core/Grid';
 import Hidden from '@material-ui/core/Hidden';
+import './../src/components/demo-import.tsx';
 export default class Car_shopping extends Component {
 	state={
 		data : [
