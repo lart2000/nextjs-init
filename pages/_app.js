@@ -1,47 +1,4 @@
-// import React from 'react'
-// import App, { Container,} from 'next/app'
-// import Head from 'next/head'
 import Header from './../src/layout/header';
-// import NoSSR from './../src/components/no-ssr/index';
-// export default class MyApp extends App {
-//   static async getInitialProps({ Component, router, ctx } ) {
-// 	// console.log(router);
-// 	// console.log(ctx);
-
-//     let pageProps = {}
-//     if (Component.getInitialProps) {
-//       pageProps = await Component.getInitialProps(ctx)
-// 	}
-// 	// console.log(pageProps.name);
-
-//     return { pageProps }
-//   }
-//   componentDidCatch (error, errorInfo) {
-//     console.log('CUSTOM ERROR HANDLING', error)
-//     // This is needed to render errors correctly in development / production
-//     super.componentDidCatch(error, errorInfo)
-//   }
-//   render () {
-// 	// const { Component,router } = this.props ;//for defaultt
-// 	const { Component,pageProps } = this.props;
-
-//     return (
-//     	<Container>
-// 			<NoSSR>
-// 			</NoSSR>
-// 			<Header/>
-// 			<Head>
-// 				<title>My new cool app</title>
-// 			</Head>
-// 		// este es layout genral
-//         	<Component {...pageProps}/>
-// 		</Container>
-// 	)
-
-//   }
-
-
-// }
 
 import React from 'react';
 import App, { Container } from 'next/app';

@@ -1,6 +1,6 @@
 const withSass = require('@zeit/next-sass'); //nested for add config
 const withTypescript = require('@zeit/next-typescript')
-withTypescript()
+// withTypescript()
 module.exports = 
 	withTypescript(
 		withSass({
@@ -20,6 +20,3 @@ module.exports =
 			}
 		})
 	);
-
-
-	
